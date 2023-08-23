@@ -9,7 +9,7 @@ Proceso guia2_11
 	
 	Escribir "ingrese dos valores :"
 	leer num1,num2
-	op <- 0
+	
 	Mientras op<>5 Hacer
 		Escribir "elija una operacion matematica :"
 		Escribir "1 --> Suma"

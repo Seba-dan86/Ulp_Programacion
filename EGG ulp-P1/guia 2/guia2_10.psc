@@ -3,11 +3,12 @@ Proceso guia2_10
 //		primera letra de la frase es igual a la ultima letra de la frase. Se deberá de imprimir un
 //		mensaje por pantalla que diga "CORRECTO", en caso contrario, se deberá imprimir
 //		"INCORRECTO".
-	Definir palabra  Como Caracter
+	Definir palabra ,first,last Como Caracter
 	Escribir "ingrese una palabra :"
 	leer palabra
-
-	si Subcadena(palabra ,0,0)<>Subcadena(palabra,Longitud(palabra)-1,Longitud(palabra)-1) Entonces
+	first=Subcadena(palabra ,0,0);
+	last=Subcadena(palabra,Longitud(palabra)-1,Longitud(palabra)-1)
+	si first<>last Entonces
 		Escribir "INCORRECTO"
 	SiNo
 	Escribir "CORRECTO" 

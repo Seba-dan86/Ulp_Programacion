@@ -36,17 +36,6 @@ Proceso guia2_11
 	
 	
 	
-//	Segun op Hacer
-//		op="s": 
-//			Escribir "Usted eligio la suma y el resultado es : " num1+num2
-//		op="r": 
-//			Escribir "Usted eligio la resta y el resultado es : " num1-num2
-//		op="m": 
-//			Escribir "Usted eligio la multiplicacion y el resultado es : " num1*num2
-//		op="d": 
-//			Escribir "Usted eligio la division y el resultado es : " num1/num2
-//		De Otro Modo:
-//			Escribir "La operacion que eligio no es valida "
-//	FinSegun
+
 	
 FinProceso

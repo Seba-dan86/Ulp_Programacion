@@ -1,6 +1,7 @@
 Algoritmo guia2_18
 //	Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
 //	programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
+<<<<<<< HEAD
 //	todos ellos
 	
 	Definir num,min,max ,suma, contador Como Entero;
@@ -32,4 +33,14 @@ Algoritmo guia2_18
 	
 	Escribir " El promedio  los numeros es :", promedio;
 	
+=======
+//	todos ellos 
+	Definir num Como Entero
+	
+	Repetir
+		Escribir "Ingresar un numero :"
+		leer num
+		
+	Hasta Que num=0 
+>>>>>>> 62a5d2792f8d88dfd2b67e7b17811f6244ceed17
 FinAlgoritmo

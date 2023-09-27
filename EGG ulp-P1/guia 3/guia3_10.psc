@@ -1,18 +1,23 @@
-Funcion rec <- recursion ( n Por Referencia )
-	Definir rec como Entero;
-	rec=(n-1)+n;
+Funcion r <- recursion(n)
+	Definir  r como Entero;
+	
+	si n=0  entonces //pto para  cortar la recursion , caso base
+		r=0;
+		
+	SiNo
+		r= n + recursion(n-1);
+		
+	FinSi
+	
 Fin Funcion
 
 Algoritmo guia3_10
 //	 Escribir una función recursiva que devuelva la suma de los primeros N enteros
-	Definir n ,r Como Entero;
+	Definir n , rec  Como Entero;
 	Escribir "Ingresa un numero : ";
 	Leer n;
-	si n=0 o n=1 entonces //pto para  cortar la recursion 
-		r=0;
-	SiNo
-		r=recursion(n)
-	FinSi
 	
-	Escribir "la suma de los ", n , " primeros numeros es : " r;
+	rec=recursion(n);
+	
+	Escribir "la suma de los ", n , " primeros numeros es : " ,rec
 FinAlgoritmo

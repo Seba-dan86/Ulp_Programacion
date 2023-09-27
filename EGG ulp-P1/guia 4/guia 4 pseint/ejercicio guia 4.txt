@@ -1,0 +1,102 @@
+                                                          Ejercicios guia 4
+nombre : D'Andrea Sebastian
+Dni : 32012535
+Ejercicio 7 : 
+  Crear un subproceso que rellene dos arreglos de tamaño n, con números aleatorios.
+Después, hacer una función que reciba los dos arreglos y diga si todos sus valores son iguales o no. La función debe devolver el resultado de está validación, para mostrar el mensaje en el algoritmo. Nota: recordar el uso de las variables de tipo lógico.
+
+Algoritmo guia_4_ejercicio_7
+	definir n , arr1 , arr2  Como Entero;
+	Escribir "ingresa el tamanio de los arreglos : ";
+	leer n
+	Dimension arr1[n] , arr2[n];
+	llenarArray(arr1,n);
+	llenarArray(arr2,n);
+	Escribir mostrarArray(arr1,arr2,n);
+	
+FinAlgoritmo
+///----------- subprocesos y funciones ---------------///
+SubProceso llenarArray(array,n)
+	Definir i Como Entero;
+	Para i=0 Hasta n-1 Hacer
+		array[i]=Aleatorio(1,10)
+	FinPara
+FinSubProceso
+///---------------------------------------------///
+Funcion show <- mostrarArray(arr1,arr2,n)
+	Definir show Como Logico;
+	Definir i , contador Como Entero;
+	contador=0;
+	Para i=0 Hasta n-1 Hacer
+		si arr1[i]==arr2[i] Entonces
+			contador=contador+1;
+		FinSi
+		si contador=10 Entonces
+			show=verdadero
+		SiNo
+			show=Falso;
+		FinSi
+	FinPara
+FinFuncion
+Ejercicio 11 : 
+Rellenar en un subproceso una matriz cuadrada con números aleatorios salvo en la	diagonal principal, la cual debe rellenarse con ceros. Una vez llena la matriz debe
+generar otro subproceso para imprimir la matriz.
+Algoritmo guia_4_ejercicio_11
+	Definir matriz ,f,c,n Como Entero;
+	Escribir "Ingrese el tamaño de la matriz:";
+	Leer n;
+	Dimension matriz[n,n];
+	llenarMatriz(matriz,f,c,n);
+	mostrarMatriz(matriz , f ,c,n);
+FinAlgoritmo
+///------------------------------///
+SubProceso llenarMatriz(matriz,f Por Referencia,c Por Referencia,n)
+	
+	// Rellenar la matriz
+	Para f = 0 Hasta n-1 Hacer
+		Para c = 0 Hasta n-1 Hacer
+			Si f = c Entonces
+				matriz[f,c] = 0;
+			Sino
+				matriz[f,c] = Aleatorio(1,100); // Genera un número aleatorio entre 0 y 100
+			FinSi
+		FinPara
+	FinPara
+FinSubProceso
+///--------------------------------///
+SubProceso mostrarMatriz(matriz , f Por Referencia ,c Por Referencia,n)
+	// Imprimir la matriz
+	Escribir "La matriz es:";
+	Para f = 0 Hasta n-1 Hacer
+		Para c = 0 Hasta n-1 Hacer
+			Escribir Sin Saltar matriz[f,c], " ";
+		FinPara
+		Escribir "";
+	FinPara
+FinSubProceso
+Ejercicio 2 extra : 
+Realizar un programa que rellene un vector de tamaño N, con valores ingresados por el usuario y muestre por pantalla el promedio de la suma de todos los valores ingresados. 
+
+Algoritmo guia_4_ejercicio_2_extra
+	Definir n, suma , array Como Entero;
+	Definir promedio Como Real;
+	Escribir "Cuantos numeros quieres ingresar en el arreglo :"
+	leer n ;
+	Dimension array[n];
+	suma=0;
+	 llenarArray(array,n, suma , promedio )
+	
+FinAlgoritmo
+///----------------------///
+SubProceso llenarArray(array,n, suma Por Referencia , promedio Por Referencia )
+	Definir i Como Entero;
+	Para i=0 Hasta n-1 Hacer
+		Escribir "ingrese los valores que quiere guardar : ";
+		leer array[i];
+		suma=suma+array[i];
+		
+	FinPara
+	promedio=suma/n;
+	 Escribir " el promedio de la suma de los valores del vector es :  ",  promedio;
+	
+FinSubProceso

@@ -17,13 +17,16 @@ Algoritmo guia3_7
 	/// lunes (1) - martes (2)...... 
 	Leer dias;
 	para i=1 Hasta dias  Hacer
+		Escribir "-----------------------------------------------"
 		Escribir "Ingrese temp maxima del dia ", i , ":" ;
 		leer tMax;
 		Escribir "Ingrese temp minima del dia ", i , ":" ;
 		leer tMin;
 		
 		tempMedia(tMax,tMin,tMedia) ;
-		 Escribir "la temp media del dia " , i ,  " es " ,  tMedia ; 
+		
+		Escribir "la temp media del dia " , i ,  " es " ,  tMedia ; 
+		Escribir "-----------------------------------------------"
 	 FinPara
 	 
 FinAlgoritmo

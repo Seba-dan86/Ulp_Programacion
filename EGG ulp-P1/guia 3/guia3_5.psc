@@ -1,12 +1,14 @@
 Funcion primo <- esPrimo ( n )
-	Definir primo,i Como Entero;
-	para i=0 Hasta n Hacer
-		si n mod i=0 y n mod n=0 Entonces
-		primo=1 // true al numero primo.
-	SiNo
-		primo=0; // false al numero primo
-	FinSi
-	finPara
+	Definir primo , i , contador Como Entero;
+	contador= 0;
+	para i=1 Hasta n Hacer
+		si n % i=0 Entonces
+			contador=contador+1;
+		FinSi
+	FinPara
+
+	primo=contador;
+	
 Fin Funcion
 
 Algoritmo guia3_5
@@ -17,10 +19,10 @@ Algoritmo guia3_5
 	Escribir "Ingrese un numero : ";
 	Leer n;
 	primo=esPrimo(n);
-	si primo =1 Entonces
+	si primo =2 Entonces
 		Escribir "El numero ",n, " es primo ";
-		Si primo = 0 Entonces
+		Sino
 			Escribir "El numero ",n, " no es primo ";
 		FinSi
-	FinSi
+	
 FinAlgoritmo

@@ -1,0 +1,40 @@
+//4) En un nuevo proyecto, en el método main de su clase principal, se pide realizar un algoritmo
+//que rellene un matriz de 4 x 4 de valores aleatorios y muestre la traspuesta de la matriz.
+   
+int [][]matriz=new int[4][4]; // creamos la matriz simetrica mismas columnas y filas.
+  int [][]matrizT=new int[4][4];      
+
+Random aleatorio= new Random();
+
+        for (int f = 0; f < matriz.length; f++) {
+             for (int c = 0; c < matriz.length; c++) {
+               matriz[f][c]=aleatorio.nextInt(10);
+            }
+  
+        }
+        for(int[]fila:matriz){
+        for(int valor:fila){
+        
+            System.out.print(valor + " ");
+        
+        }
+            System.out.println(" ");
+          }
+        
+ for(int f=0;f<4;f++){
+            for(int c=0;c<4;c++){
+                matrizT[f][c]=matriz[c][f];
+    }
+               
+            
+        }
+ System.out.println("Humano aqui esta tu pinc**%*%* matriz traspuesta");
+  for(int i=0;i<4;i++){
+            for(int j=0;j<4;j++){
+                System.out.print(matrizT[i][j]);
+            }
+            System.out.println("");
+        }
+}
+}
+ 

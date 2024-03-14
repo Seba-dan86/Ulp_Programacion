@@ -1,0 +1,51 @@
+// ejercicio 5 : En un nuevo proyecto, en el método main de su clase principal, se pide realice un algoritmo que
+//compruebe si una matriz dada es anti simétrica. Se dice que una matriz A es anti simétrica cuando
+//ésta es igual a su propia traspuesta, pero cambiada de signo. Es decir, A es anti simétrica si A = -
+//AT. La matriz traspuesta de una matriz A se denota por AT y se obtiene cambiando sus filas por
+//columnas (o viceversa).
+
+int [][]matriz1=new int[4][4]; // creamos matriz
+
+int[][]matrizTrans=new int[4][4];
+
+Random aleatorio=new Random(); // instascia Random para numeros aleatorios
+
+        System.out.println("Matriz normal");
+        for (int f = 0; f < 4; f++) {      // anidamos dos for para rellenar de forma aleatoria las filas y columnas
+            for (int c = 0; c < 4; c++) {
+                matriz1[f][c]=aleatorio.nextInt(-50,50);
+            }
+        }
+         for(int[]fila:matriz1){ //  forEach para que por cada fila haga ponga un valor 
+        for(int valor:fila){
+        
+            System.out.print(valor + " "); // imprimimos el valor de cada pasada
+        
+        }
+            System.out.println(" ");
+          }
+for (int f = 0; f < 4; f++) {           // transponemos la matriz solo cambiando filas/columnas por columnas/filas
+            for (int c = 0; c < 4; c++) {
+                matrizTrans[c][f]=matriz1[f][c];
+                
+}
+}
+        System.out.println("===================================");
+        System.out.println("Matriz transpuesta ");
+for (int i = 0; i < 4; i++) {
+  for (int j = 0; j < 4; j++) {
+  System.out.print(matrizTrans[i][j] + " ");
+  }
+  System.out.println();
+}
+boolean esAnti=true;
+        for (int f = 0; f < 4; f++) {
+            for (int c = 0; c < 4; c++) {
+                if(matriz1[f][c]!= -1*(matrizTrans[c][f])){
+//                esAnti=false;
+                System.out.println("no son");
+                    
+                }else{ System.out.println("son anti Simetricas "); }
+            }
+        }
+    }

@@ -1,0 +1,54 @@
+java =>
+# paradigma de programacion => conj de metodos sistematicos aplicables a la programacion
+
+#POO => identificacion de los obj inherentes al problema , facilita su reutilizacion, paradigma con objetos , metodos ,estado y atributos.
+
+ # objeto=> preferentemente con metodos publicos para poder reutilizarlos y de atributos ocultos. son instancias de una clase
+
+# atributos => 
+
+#metodos => acciones de un objeto.
+
+# clase => plantilla o estructura con caracteristicas o patrones o comportamientos
+
+
+## diagrama uml para clases ---> nombre ---> atributos ---> metodos
+
+POO =>  
+- encapsulamiento : hace referentia a la accesibilidad de una clase u objeto , si otro objeto puede usar cierto metodo o atributo va a estar limitado por el encapsulamiento o privacidad.
+
+- Hrencia : hace referencia a los metodos o atributos que una clase hija puede heredar o utilizar de su clase padre, una clase puede tener atribujos o metodos propios y usar otros de su clase padre.
+
+-Polimorfismo: habilidad de un objeto de hacer una misma accion de diferentes maneras,
+pasando un metodo general a sus objetos.
+
+leng de programacion 
+
+-alto nivel => lenguajes con sintaxis faciles de entender ,  necesitan ser traducidos por un compilador para que entienda el procesador.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+ // Declarar el objeto e inicializar con
+        // el objeto de entrada estándar predefinido
+
+        Scanner sc = new Scanner(System.in);
+
+        // entrada de una cadena
+        String name = sc.nextLine();
+
+        // entrada de un carácter
+        char gender = sc.next().charAt(0);
+
+        // Entrada de datos numéricos
+        // byte, short y float
+        int age = sc.nextInt();
+        long mobileNo = sc.nextLong();
+        double average = sc.nextDouble();
+
+        // Imprima los valores para verificar si la entrada
+        // fue obtenida correctamente.
+        System.out.println("Nombre: "+name);
+        System.out.println("Género: "+gender);
+        System.out.println("Edad: "+age);
+        System.out.println("Teléfono: "+mobileNo);
+        System.out.println("Promedio: "+average);

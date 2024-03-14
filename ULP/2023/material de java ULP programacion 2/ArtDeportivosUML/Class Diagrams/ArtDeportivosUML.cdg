@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ArtDeportivosUML">
+  <ClassDiagramComponents>
+    <Class name="ArticuloDeportivo" package="" visibility="public" isAbstract="true" xPosition="47.0" yPosition="25.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="precio" type="Double" visibility="private"/>
+        <Field name="stock" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="MostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RaquetaTenis" package="" visibility="public" xPosition="436.0" yPosition="62.0">
+      <Fields>
+        <Field name="materia" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BotaMontana" package="" visibility="public" xPosition="436.0" yPosition="188.0">
+      <Fields>
+        <Field name="talla" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BalonFutbol" package="" visibility="public" xPosition="47.0" yPosition="390.0">
+      <Fields>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TiendaDeportiva" package="" visibility="public" xPosition="391.0" yPosition="347.0">
+      <Fields>
+        <Field name="inventario" type="ArrayList" visibility="private"/>
+        <Field name="inbee" type="ArrayList&lt;ArticuloDeportivo&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="AgregarArticulo" returnType="ArticuloDeportivo" visibility="public">
+          <Argument type="ArticuloDeportivo" name="articulo"/>
+        </Method>
+        <Method name="MostrarInventario" returnType="void" visibility="public"/>
+        <Method name="OrdenarPrecio" returnType="void" visibility="public"/>
+        <Method name="OrdenarStock" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="OfertaDeportiva" package="" visibility="public" xPosition="149.0" yPosition="245.0">
+      <Methods>
+        <Method name="AplicarDescuento" returnType="void" visibility="public">
+          <Argument type="Integer" name="descuento"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="TiendaDeportiva" target="ArticuloDeportivo" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="BotaMontana" target="ArticuloDeportivo"/>
+    <IsRelation name="is" source="BalonFutbol" target="ArticuloDeportivo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="BalonFutbol" target="OfertaDeportiva"/>
+    <IsRelation name="is" source="RaquetaTenis" target="ArticuloDeportivo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

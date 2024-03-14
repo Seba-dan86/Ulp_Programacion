@@ -1,0 +1,14 @@
+*
+
+.barraNav{
+    background-color: #e97171;
+display: flex;
+
+}
+.barraNav ul li{
+
+  display: inline;
+  margin-left: 20px;
+
+
+}

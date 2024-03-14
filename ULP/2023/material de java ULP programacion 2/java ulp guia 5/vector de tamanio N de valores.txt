@@ -1,0 +1,34 @@
+ // vector de tamanio N de valores aleatorios 
+    // y el usuario que pida un numero a buscar
+    // El programa mostrará donde se encuentra el número y si se encuentra repetido
+    
+    Random random=new Random(); // objeto random
+     Scanner leer = new Scanner(System.in ); // objeto scanner para pedir por teclado el largo del array
+        System.out.println("Ingrese el tamanio del vector : ");
+        int[]vector= new int[leer.nextInt()]; // creacion e inicializacion del vector
+        for (int i = 0; i <vector.length; i++) {
+            vector[i]=random.nextInt(vector.length); // con el for rellenamos el vector con valores aleatorios
+        }
+        for (int j = 0; j < vector.length; j++) { // imprimimos el numero random en cada vuelta
+            System.out.println(" " + vector[j]);
+        }
+        System.out.println("ingresa un numero a buscar :"); // ponemos el numero a buscar.
+       int buscado= leer.nextInt();
+       boolean encontrado=false;
+        for (int i = 0; i < vector.length; i++) {
+            if(buscado==vector[i]){ 
+                
+               System.out.println(" se encontro el numero buscado en la posicion " + i );    // voy a buscar si no esta el numero que pido por teclado
+               encontrado= true;
+               
+              
+             } 
+            
+             
+        }
+        
+        if(!encontrado){
+            System.out.println("el numero no se encontro en el vector");
+        }
+       
+        

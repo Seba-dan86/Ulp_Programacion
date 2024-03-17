@@ -1,7 +1,7 @@
 *
 
 .barraNav{
-    background-color: #e97171;
+    background-color: #ac4141;
 display: flex;
 
 }
@@ -9,6 +9,157 @@ display: flex;
 
   display: inline;
   margin-left: 20px;
+  color: aliceblue;
+  font-size: 20px;
+}
+.barraNav ul li:hover{
+  color:burlywood;
+transition: 1s;
+}
 
+.banner{
+  margin-left:350px;
+
+}
+
+.container {
+
+display: flex;
+margin:auto !important;
+
+  width: 90%;
+  height: 85px;
+  border: 1px solid black;
+
+}
+.op{
+  font-size: 22px;
+  padding-top: 15px;
+border: 1px solid black;
+   background-color: #ceca96;
+   width: 35%;
+   text-align: center;
+}
+.nada{
+  background-color: #ac4141;
+  border: 1px solid black;
+  width: 20%;
+}
+.mostrarEn{
+  background-color: #ac4141;
+  color:#d1b464;
+  width:35%;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 20px;
+
+}
+.btn{
+  background-color: #d1b464;
+  height: 35px;
+  margin-left: 25px;
+
+}
+.vacio{
+  width: 6px;
+  background-color: #d1b464;
+}
+.card{
+  display: flex;
+border: 4px solid #ac4141;
+  background-color: #ac4141;
+  width:99%;
+  height: 550px;
+  margin-left: 48px ;
+margin-top: 40px;
+}
+.izquierda{
+border : 1px solid black;
+
+height: 99%;
+display: flex;
+align-items:center;
+flex-direction:column;
+  border : 1px solid black;
+width: 33%;
+
+}
+.arriba{
+text-align: center;
+height: 33%;
+  border : 1px solid black;
+background-color: #d1b464;
+width: 100%;
+}
+.medio{
+  height: 33%;
+  width: 100%;
+  border : 1px solid black;
+  background-color: #d1b464;
+  }
+  .abajo{
+    height: 33%;
+    width: 100% ;
+    border : 1px solid black;
+    overflow-y: scroll;
+    }
+
+.centro{
+  border : 1px solid black;
+width: 33%;
+color :wheat;
+font-size: 25px;
+overflow-y: auto;
+
+}
+.derecha{
+  background-color: #e5dd8c;
+  display: flex;
+align-items:center;
+flex-direction:column;
+  border : 1px solid black;
+width: 33%;
+
+}
+.f1{
+
+  width: 100%;
+  height: 33%;
+  background-image: url(../img/hosp1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+background-size: cover;
+}
+.f1:hover{
+  transform: scale(.9);
+  transition: 235ms ease-in-out;
+
+}
+
+.f2{
+  width: 100%;
+  height: 33%;
+  background-image: url(../img/hoap2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+.f2:hover{
+  transform: scale(.9);
+  transition: 235ms ease-in-out;
+
+}
+.f3{
+  width: 100%;
+  height: 33%;
+  background-image: url(../img/hosp3.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.f3:hover{
+  transform: scale(.9);
+  transition: 235ms ease-in-out;
 
 }

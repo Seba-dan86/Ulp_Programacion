@@ -13,28 +13,32 @@
         <nav class="barraNav"><img src="../img/logo-nav (1).png" alt="logo hotel">
             <ul>
             <li>Inicio</li>
+
             <li>Informacion</li>
             <li>Acceso</li>
             <li>Galeria</li>
             <li>Turismo</li>
             <li>Contactanos</li>
+
         </ul>
-        <a href="https://facebook.com"><img src="../img/facebook.png" alt="" width="50" height="50"></a>
-        <a href="https://instagram.com"><img src="../img/instagram.png" alt=""  width="50" height="50"></a>
+
+        <a href="https://facebook.com" target="_blank" ><img src="../img/facebook.png" alt="" width="50" height="50"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt=""  width="50" height="50"></a>
 
         </nav>
     </header>
+    <div class="banner">
 
-<span class="banner">
+        <img src="../img/ALOJAMIENTO.png" alt="banner">
+    </div>
 
-<img src="../img/ALOJAMIENTO.png" alt="banner">
-</span>
+    <main>
 <div class="container">
     <div class="op">Opciones de busqueda</div>
     <div class="nada"></div>
     <div class="vacio"></div>
-    <div class="mostrarEn">Mostrar en : <button class="btn">Tarjetas</button>
-    <button class="btn">Tabla</button></div>
+    <div class="mostrarEn">Mostrar en : <button class="btn" id="btn-tar" onclick="btnTablas()" >Tarjetas</button>
+    <button class="btn" id="btn-table" onclick="btnTablas()">Tabla</button></div>
     <div class="vacio"></div>
     <div class="nada"></div>
 </div>
@@ -79,5 +83,113 @@
         <div class="f3"></div>
     </div>
 </div>
+
+<div class="card">
+    <div class="izquierda">
+        <div class="arriba"><p>
+            <h3>Hotel de Turismo</h3>
+            <a href="#">Contacto : 3837 402087</a>
+        </p>
+    </div>
+        <div class="medio"><img src="../img/UbicacionIcon.png" alt=""><p>Esquina: Calle 25 de Mayo y Calle Moreno</p></div>
+        <div class="abajo"><div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"query":"Calle 25 de Mayo 230, Juan José Castelli, Chaco, Argentina","width":800,"height":600,"satellite":true,"zoom":12,"placeId":"EkhDLiAyNSBkZSBNYXlvICYgQy4gTWFyaWFubyBNb3Jlbm8sIEp1YW4gSm9zw6kgQ2FzdGVsbGksIENoYWNvLCBBcmdlbnRpbmEiZiJkChQKEglVr7Zr_ExAlBEuAq5eGxyyYBIUChIJVa-2a_xMQJQRLgKuXhscsmAaFAoSCSVLMQ38TECUEcJV9rJ8RjdcGhQKEgk56t2Z_ExAlBGWN6LvF43fUCIKDeCJiPAVGPvd2w","cid":"0x60b21c1b5eae022e","coords":[-25.9487264,-60.6209256],"lang":"es","queryString":"Calle 25 de Mayo & Calle Mariano Moreno, Juan José Castelli, Chaco, Argentina","centerCoord":[-25.9487264,-60.6209256],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1083923"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=1083923';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();</script><a href="https://1map.com/es/map-embed"></a></div></div>
+    </div>
+    <div class="centro">
+        <h3>
+            Información
+            Servicios
+    </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed itaque culpa exercitationem, cumque, libero laborum maiores officia, aliquid
+        corporis dolor quidem! Eius, eveniet non officia in pariatur maxime ipsum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum voluptas, velit quo saepe alias dolorum rerum unde perferendis odio minima. Consequatur aliquam deserunt dolores asperiores eos qui culpa earum?</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nam quia, molestias beatae aperiam, error voluptates debitis atque eum, optio magni. Vitae exercitationem
+     excepturi necessitatibus similique consequatur ducimus illo repudiandae?</p>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit fuga quis cum a veritatis repellendus maiores reprehenderit qui illo, magni aperiam
+        provident nulla molestiae voluptatem itaque error rerum debitis deleniti!</p>
+        </div>
+    <div class="derecha">
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+    </div>
+</div>
+<div class="tino">
+    <h3>GRACIAS POR VISITAR TINOGASTA</h3>
+    <p>"Nuestro destino nunca es un lugar, sino una nueva forma de ver las cosas”.</p>
+<img src="../img/tino.png" alt="">
+</div>
+<div class="accesos">
+<h3>ACCESOS</h3>
+<div class="items">
+    <img src="../img/coche.png" alt="como llegar"  width="70" height="70">
+   <a href=""> Como llegar</a>
+   <p>Rutas . Accesos</p>
+</div>
+<div class="items">
+    <img src="../img/coche.png" alt="como llegar"  width="70" height="70" >
+   <a href="">Mapas de la ciudad</a>
+   <p>Mapas. Comercios y Servicios</p>
+</div>
+   <div class="items">
+    <img src="../img/coche.png" alt="como llegar" width="70" height="70" >
+   <a href="">Que Hacer</a>
+   <p>Actividades. Excursiones</p>
+   </div>
+   <div class="items">
+    <img src="../img/coche.png" alt="como llegar"   width="70" height="70">
+   <a href="">Donde Comer</a>
+   <p>Restaurantes. Comedores. Bares.</p>
+   </div>
+   <div class="items">
+    <img src="../img/coche.png" alt="como llegar"   width="70" height="70">
+   <a href="">Dónde Alojarse</a>
+   <p>Hoteles. Hostales.</p>
+   </div>
+   <div class="items">
+    <img src="../img/coche.png" alt="como llegar"  width="70" height="70">
+   <a href="">Clima Hoy</a>
+   <p>Clima en Tinogasta y Localidades</p>
+</div>
+
+
+<div class="muni">
+    <h2>Visita la Página oficial de la Municipalidad de Tinogasta</h2>
+    <a href="http://tinogasta.gob.ar/">http://tinogasta.gob.ar/</a>
+    <button class="btnAqui" onclick="btnTablas()">Click Aqui</button>
+
+</div>
+<div class="galeria">
+<h3>Galeria de fotos</h3>
+<p>Conoce todo el Departamento de Tinogasta desde esta increíble Galería de Fotos de sus atractivos, rutas, y sus lugares mas bellos.</p>
+<button class="btn-gal" onclick="btnTablas()">Galeria de Imagenes</button>
+<button class="btn-gal" onclick="btnTablas()">Muestra Fotografica</button>
+</div>
+<div class="gridImg">
+    <p class="hide" >Iglesia San Juan Bautista
+        Ubicada en Plaza Principal 25 de Mayo</p>
+    <img src="../img/porf-1.jpg" alt="" id="img">
+    <img src="../img/porf-2.jpg" alt=""  >
+    <img src="../img/porf-3.jpg" alt=""  >
+    <img src="../img/porf-4.jpg" alt=""  >
+    <img src="../img/porf-5.jpg" alt=""  >
+    <img src="../img/porf-6.jpg" alt=""  >
+    <img src="../img/porf-7.jpg" alt=""  >
+    <img src="../img/porf-8.jpg" alt=""  >
+</div>
+
+</main>
+<script src="pto5.js"></script>
 </body>
 </html>

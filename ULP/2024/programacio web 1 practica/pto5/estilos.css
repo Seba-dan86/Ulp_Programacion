@@ -3,7 +3,12 @@
 .barraNav{
     background-color: #ac4141;
 display: flex;
+margin-left: 40px;
 
+
+}
+.barraNav a{
+padding-left: 30px;
 }
 .barraNav ul li{
 
@@ -25,7 +30,7 @@ transition: 1s;
 .container {
 
 display: flex;
-margin:auto !important;
+margin:auto ;
 
   width: 90%;
   height: 85px;
@@ -58,7 +63,12 @@ border: 1px solid black;
   background-color: #d1b464;
   height: 35px;
   margin-left: 25px;
+  cursor: pointer;
+  border-radius: 5px;
 
+}
+.btn:hover{
+  color: #e5dd8c;
 }
 .vacio{
   width: 6px;
@@ -72,37 +82,56 @@ border: 4px solid #ac4141;
   height: 550px;
   margin-left: 48px ;
 margin-top: 40px;
+border-radius: 5px;
+}
+.card:hover{
+  transform: translateX(40px);
+  transition: 200ms ;
 }
 .izquierda{
 border : 1px solid black;
-
 height: 99%;
 display: flex;
 align-items:center;
 flex-direction:column;
   border : 1px solid black;
 width: 33%;
+padding: auto;
+
 
 }
 .arriba{
 text-align: center;
 height: 33%;
-  border : 1px solid black;
+
 background-color: #d1b464;
 width: 100%;
 }
+.arriba:hover{
+  transform: scale(.9);
+  transition: 235ms ease-in-out;
+border-radius: 5px;}
 .medio{
   height: 33%;
   width: 100%;
-  border : 1px solid black;
+
+
   background-color: #d1b464;
   }
+  .medio:hover{
+    transform: scale(.9);
+    transition: 235ms ease-in-out;
+  border-radius: 5px;}
   .abajo{
     height: 33%;
     width: 100% ;
-    border : 1px solid black;
+
     overflow-y: scroll;
     }
+    .abajo:hover{
+      transform: scale(.9);
+      transition: 235ms ease-in-out;
+    border-radius: 5px;}
 
 .centro{
   border : 1px solid black;
@@ -133,6 +162,7 @@ background-size: cover;
 .f1:hover{
   transform: scale(.9);
   transition: 235ms ease-in-out;
+  border-radius: 5px;
 
 }
 
@@ -148,6 +178,7 @@ background-size: cover;
 .f2:hover{
   transform: scale(.9);
   transition: 235ms ease-in-out;
+  border-radius: 5px;
 
 }
 .f3{
@@ -161,5 +192,112 @@ background-size: cover;
 .f3:hover{
   transform: scale(.9);
   transition: 235ms ease-in-out;
+  border-radius: 5px;
+
+}
+.tino{
+  height: 500px;
+  background-color: #ac4141;
+  margin-top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.tino h3{
+  font-size: 25px;
+  color: aliceblue;
+}
+.tino p{
+  font-size: 20px;
+  color: aliceblue;
+}
+.accesos{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.accesos h3{
+  font-size: 30px;
+  color: #ac4141;
+}
+.items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+
+
+}
+.items img{
+
+  background-color: #cf9191;
+  border: 1px solid black;
+
+  border-radius: 50%;
+}
+  a {
+text-decoration: none;
+}
+.muni{
+  background-color: #ac4141;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+
+}
+.muni h2{
+  color :#fff ;
+}
+.btnAqui{
+  font-size: 20px;
+  margin-top: 50px;
+  width: 140px;
+  height: 90px;
+  color: aliceblue;
+background-color: #ac4141;
+border: 2px solid white;
+border-radius: 35px  ;
+cursor: pointer;
+}
+.btnAqui:hover{
+  background:#fff;
+  color:#ac4141;
+  transition: .5s;
+}
+.galeria{
+  background: #d0e6e9;
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  margin-top: 40px;
+}
+.btn-gal{
+  background: #ac4141;
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  color:aliceblue;
+  border: none;
+}
+.btn-gal:hover{
+background: #000;
+transition: .5s;
+
+}
+.gridImg{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #040405;
+  padding: 5px;
+
+
+}
+.gridImg img:hover{
+  opacity: 0.2;
+
 
 }
